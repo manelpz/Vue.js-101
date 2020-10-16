@@ -7,6 +7,9 @@
   <h1>Vue basic</h1>
   <div id="app">
     <h2>{{title}}</h2>
+    <p>{{greet('morning')}}</p>
+    <a v-bind:href="url">youtube</a>
+    <div v-bind:class="classes">Classes from instance</div>
   </div>
   
   <script src="app.js"></script>
