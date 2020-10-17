@@ -15,6 +15,13 @@
   <h1>Vue basic</h1>
   <div id="app">
     <h2>{{title}}</h2>
+
+    <p>i earn {{wage}} dollars</p>
+    <button v-on:click="changeWage(1)">Increase wage by 1</button>
+    <button v-on:click="changeWage(-1)">decrease wage by 1</button>
+    <button v-on:dblclick="changeWage(5)">increase wage by 5</button>
+    <button v-on:dblclick="changeWage(-5)">decrease wage by 5</button>
+
     <p>{{greet('morning')}}</p>
     <a v-bind:href="url">youtube</a>
     <div v-bind:class="classes">Classes from instance</div>
