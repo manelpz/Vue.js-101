@@ -5,7 +5,11 @@ new Vue({
         wage: 10,
         name: 'emmanuel',
         url: 'http://www.youtube.com',
-        classes: ['one', 'two']
+        classes: ['one', 'two'],
+        coords:{
+            x:0,
+            y:0
+        }
     },
     methods:{
         greet(time){
@@ -13,6 +17,13 @@ new Vue({
         },
         changeWage(amount){
             this.wage += amount
+        },
+        logEvent(e){
+            console.log(e);
+        },
+        logCoords(e){
+            this.coords.x = e.offsetX
+            this.coords.y = e.offsetY
         }
     }
 })
