@@ -24,7 +24,9 @@
 
     <!--modifiers-->
     <p>my name is {{name}}</p>
-    <button @click.alt="logMessage">click me</button>
+    <button @click.alt="logMessage">alt only click me</button>
+    <button @click.shift="logMessage">shift only click me</button>
+    <a href="http://www.google.com" @click.prevent="logMessage">google</a>
     <br><br><br>
 
      <!--two way databinding-->
