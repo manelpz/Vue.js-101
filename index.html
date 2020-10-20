@@ -22,6 +22,11 @@
   <div id="app">
     <h2>{{title}}</h2>
 
+    <!--modifiers-->
+    <p>my name is {{name}}</p>
+    <button @click.alt="logMessage">click me</button>
+    <br><br><br>
+
      <!--two way databinding-->
      <p>my name is {{name}}</p>
      <input type="text" v-model="name">
