@@ -29,6 +29,9 @@
     <a href="http://www.google.com" @click.prevent="logMessage">google</a>
     <br><br><br>
 
+     <!--conditional output v-if-->
+     <p v-if="showName">Mario</p>
+
      <!--two way databinding-->
      <p>my name is {{name}}</p>
      <input type="text" v-model="name">

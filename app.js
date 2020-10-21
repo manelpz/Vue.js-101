@@ -4,6 +4,7 @@ new Vue({
         title: 'Becoming a vue ninja',
         wage: 10,
         name: 'emmanuel',
+        showName:true,
         url: 'http://www.youtube.com',
         classes: ['one', 'two'],
         coords:{
