@@ -4,7 +4,7 @@ new Vue({
         title: 'Becoming a vue ninja',
         wage: 10,
         name: 'emmanuel',
-        showName:true,
+        showName:false,
         url: 'http://www.youtube.com',
         classes: ['one', 'two'],
         coords:{
@@ -32,6 +32,9 @@ new Vue({
         },
         logMessage(){
             console.log('hello world')
+        },
+        toggleName(){
+            this.showName = !this.showName
         }
     }
 })
