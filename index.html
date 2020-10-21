@@ -31,7 +31,10 @@
 
      <!--conditional output v-if-->
      <p v-if="showName">Mario</p>
+     <p v-else-if="showAge">30</p>
      <button @click="toggleName">ShowName: {{showName}}</button>
+     <button @click="toggleAge">ShowAge: {{showAge}}</button>
+     <br><br><br>
 
      <!--two way databinding-->
      <p>my name is {{name}}</p>

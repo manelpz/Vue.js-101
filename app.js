@@ -5,6 +5,7 @@ new Vue({
         wage: 10,
         name: 'emmanuel',
         showName:false,
+        showAge: true,
         url: 'http://www.youtube.com',
         classes: ['one', 'two'],
         coords:{
@@ -35,6 +36,9 @@ new Vue({
         },
         toggleName(){
             this.showName = !this.showName
+        },
+        toggleAge(){
+            this.showAge = !this.showAge
         }
     }
 })
