@@ -3,6 +3,11 @@ new Vue({
     data: {
         title: 'Becoming a vue ninja',
         items:['mushroom','green shell','red shell','banana','start'],
+        ninjas:[
+            {name:'cristal', age: 25, belt:'black'},
+            {name:'ryu', age: 20, belt:'yellow'},
+            {name:'ken', age: 12, belt:'black'}
+        ],
         wage: 10,
         name: 'emmanuel',
         showName:false,
