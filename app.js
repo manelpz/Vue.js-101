@@ -2,6 +2,7 @@ new Vue({
     el: '#app',
     data: {
         title: 'Becoming a vue ninja',
+        items:['mushroom','green shell','red shell','banana','start'],
         wage: 10,
         name: 'emmanuel',
         showName:false,
