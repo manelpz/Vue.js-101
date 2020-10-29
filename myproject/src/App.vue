@@ -5,9 +5,14 @@
 </template>
 
 <script>
+import Navbar from './Navbar'
+
 export default {
   name: 'app',
-  data () {
+components:{
+  Navbar: Navbar
+},
+data () {
     return {
       title: 'my first vue app'
     }
