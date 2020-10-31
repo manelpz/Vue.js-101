@@ -2,6 +2,8 @@
   <div id="app">
  <h1>{{title}}</h1>
  <Navbar/>
+ <AllFriends/>
+ <OnlineFriends/>
 
   <nav>
       <ul>
@@ -16,11 +18,15 @@
 
 <script>
 import Navbar from './Navbar'
+import AllFriends from './AllFriends'
+import OnlineFriends from './OnlineFriends'
 
 export default {
   name: 'app',
 components:{
-  Navbar
+  Navbar,
+  AllFriends,
+  OnlineFriends
 },
 data () {
     return {
