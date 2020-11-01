@@ -1,7 +1,7 @@
 <template>
     <div id="all-friends">
         <h2>all friends</h2>
-        <div v-for="friend in friends">
+        <div v-for="(friend, index) in friends" :key="index">
             <span>{{friend.name}}</span>
         </div>
     </div>
@@ -12,16 +12,9 @@
     export default {
         name:'AllFriends',
         data(){
-            return{
-                friends: [
-                    {name: 'Mario', online: true},
-                    {name: 'luigi', online: false},
-                    {name: 'toad', online: true},
-                    {name: 'bowser', online: false}
-                ]
+           return{}
             }
         }
-    }
 </script>
 
 

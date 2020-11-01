@@ -2,8 +2,8 @@
   <div id="app">
  <h1>{{title}}</h1>
  <Navbar/>
- <AllFriends/>
- <OnlineFriends/>
+ <AllFriends :friends="friends"/>
+ <OnlineFriends :friends/>
 
   <nav>
       <ul>
@@ -30,7 +30,14 @@ components:{
 },
 data () {
     return {
-      title: 'my first vue app'
+      title: 'my first vue app',
+      friends: [
+          {name: 'Mario', online: true},
+          {name: 'luigi', online: false},
+          {name: 'toad', online: true},
+          {name: 'bowser', online: false}
+      ]
+            
     }
   }
 }
