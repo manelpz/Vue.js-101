@@ -11,6 +11,7 @@
 <script>
     export default {
         name:'AllFriends',
+        props:['friends'],
         data(){
            return{}
             }

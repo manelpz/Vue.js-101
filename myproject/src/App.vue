@@ -3,7 +3,7 @@
  <h1>{{title}}</h1>
  <Navbar/>
  <AllFriends :friends="friends"/>
- <OnlineFriends :friends/>
+ <OnlineFriends :friends="friends"/>
 
   <nav>
       <ul>
