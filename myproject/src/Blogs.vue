@@ -28,7 +28,7 @@
             filteredPosts(){
                 return this.posts.filter(post => {
                     return post.title.match(this.searchTerm)
-                })
+               })
             }
         },
         created(){
