@@ -1,33 +1,27 @@
 
 <template>
     <div class="blogs">
-        <h2>{{blogTitle}}</h2>
-        <button @click="changeTitle">change title</button>
+        <h2>blogs</h2>
     </div>
 </template>
 
-
 <script>
+    import axios from 'axios'
+
     export default{
         name:'Blogs',
         data(){
-            return {
-                blogTitle: 'Blogs'
+            return{
+                
             }
         },
         methods:{
-            changeTitle(){
-                this.blogTitle='Amazing blog site'
-            }
-        },
-        beforeCreate(){
-            alert('before create hook')
+           
         },
         created(){
-            alert('created hook')
-        },
-        beforeUpdate(){
-            alert('beforeUpdate');
+           axios.get('https://jsonplaceholder.typicode.com/posts/').then(response =>{
+                console.log(response)   
+            })
         }
         
     }

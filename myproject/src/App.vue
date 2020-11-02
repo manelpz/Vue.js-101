@@ -2,7 +2,7 @@
   <div id="app">
  <h1>{{title}}</h1>
  <Navbar/>
-<Blogs/>
+ <Blogs/>
   <nav>
       <ul>
           <li><a href="">Home</a></li>
