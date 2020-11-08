@@ -1,6 +1,6 @@
 <template>
     <div class="view-profile">
-        <h2>Profile</h2>
+        <h2>Profile for {{userId}}</h2>
     </div>
 </template>
 
@@ -9,12 +9,12 @@
         name:'ViewProfile',
         data () {
             return{
-
+                userId: this.$route.params.user_id
             }
         }
     }
 </script>
 
 <style>
-    
+
 </style>
